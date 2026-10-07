@@ -7,14 +7,23 @@ export default function DharmikPathPage() {
   const { openBookingModal } = useBookingModal();
 
   const paths = [
-    { name: "Sangeetmay Sundarkand Path", time: "3 Ghante", fee: 2500 },
-    { name: "Akhand Ramayan Path (24 Ghante)", time: "24 Ghante", fee: 11000 },
-    { name: "Shrimad Bhagwat Geeta Path", time: "4 Ghante", fee: 3500 },
-    { name: "Satyanarayan Vrat Katha", time: "2 Ghante", fee: 1500 },
+    { name: "Naamkaran Sanskar", time: "2 Ghante", fee: 1500 },
+  { name: "Annaprashan Sanskar", time: "2 Ghante", fee: 1500 },
+  { name: "Mundan Sanskar", time: "2 Ghante", fee: 2100 },
+  { name: "Karnavedha Sanskar", time: "1.5 Ghante", fee: 1100 },
+  { name: "Vidyarambha Sanskar", time: "2 Ghante", fee: 1500 },
+  { name: "Upanayan / Yagyopavit Sanskar", time: "4 Ghante", fee: 5100 },
+  { name: "Vedarambha Sanskar", time: "2 Ghante", fee: 2100 },
+  { name: "Garbhadhana Sanskar", time: "2 Ghante", fee: 2100 },
+  { name: "Pumsavana Sanskar", time: "2 Ghante", fee: 2100 },
+  { name: "Simantonnayana Sanskar", time: "2 Ghante", fee: 2100 },
+  { name: "Vivah Sanskar", time: "6 Ghante", fee: 11000 },
+  { name: "Antyeshti / Antim Sanskar", time: "3 Ghante", fee: 5100 },
   ];
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <span className="text-orange-600 font-bold text-xs uppercase tracking-wider text-center max-w-3xl mx-auto mb-12 block">॥ ॐ सूर्याय नमः ॥</span>
       <h1 className="text-3xl font-extrabold text-center text-stone-900 mb-8">Dharmik Path Sewa</h1>
       <div className="grid gap-4">
         {paths.map((p, idx) => (

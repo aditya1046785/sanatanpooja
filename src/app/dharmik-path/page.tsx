@@ -15,6 +15,7 @@ export default function DharmikPathPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <span className="text-orange-600 font-bold text-xs uppercase tracking-wider text-center max-w-3xl mx-auto mb-12 block">॥ ॐ सूर्याय नमः ॥</span>
       <h1 className="text-3xl font-extrabold text-center text-stone-900 mb-8">Dharmik Path Sewa</h1>
       <div className="grid gap-4">
         {paths.map((p, idx) => (

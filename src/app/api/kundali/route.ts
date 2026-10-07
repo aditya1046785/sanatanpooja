@@ -36,3 +36,14 @@ export async function POST(req: Request) {
     );
   }
 }
+
+// GET: Admin ke liye Kundali requests fetch karna
+export async function GET() {
+  try {
+    await connectDB();
+    const list = await KundaliRequest.find().sort({ createdAt: -1 }).limit(100);
+    return NextResponse.json({ success: true, data: list });
+  } catch (error: any) {
+    return NextResponse.json({ success: false, message: error.message }, { status: 500 });
+  }
+}

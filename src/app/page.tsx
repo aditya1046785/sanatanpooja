@@ -1,5 +1,5 @@
 "use client";
-
+import Hero from "@/components/hero"
 import Link from "next/link";
 import { useBookingModal } from "@/context/BookingModalContext";
 
@@ -24,40 +24,8 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-amber-100/70 via-orange-50/40 to-[#fdfbf7] py-16 sm:py-24 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
-          <span className="inline-block bg-orange-100 text-orange-800 text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full mb-4 border border-orange-200">
-            ॥ सत्यमेव जयते ॥ सम्पूर्ण वैदिक कर्मकाण्ड सेवा
-          </span>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 tracking-tight leading-tight">
-            Vaidik Vidhi Se Karwayein <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-600 to-red-600">
-              Shuddh Puja Aur Jyotish Anushthan
-            </span>
-          </h1>
-          <p className="mt-4 text-stone-600 text-base sm:text-lg max-w-2xl mx-auto">
-            Ghar baithe pramanik Vidwan Acharyon dwara pujan sampanna karwayein. Shanti, samriddhi aur mangal ka sankalp.
-          </p>
-
-          {/* Action CTAs */}
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="https://wa.me/919999999999?text=Namaste!%20Mujhe%20Puja%20ke%20vishay%20me%20jankari%20chahiye."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 px-8 rounded-xl shadow-md transition-transform active:scale-95 flex items-center justify-center gap-2"
-            >
-              <span>💬 WhatsApp Par Sampark Karein</span>
-            </a>
-            <a
-              href="#services"
-              className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white font-bold py-3.5 px-8 rounded-xl shadow-md transition-transform active:scale-95"
-            >
-              Sewa Book Karein ↓
-            </a>
-          </div>
-        </div>
-      </section>
+      <Hero />
+      
 
       {/* Categories Grid */}
       <section id="services" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
